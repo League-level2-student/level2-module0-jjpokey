@@ -1,5 +1,9 @@
 package arrays;
 
+import java.util.Random;
+
+import org.omg.Messaging.SyncScopeHelper;
+
 public class _00_ArrayCheatSheet {
 	public static void main(String[] args) {
 		//1. make an array of 5 Strings
@@ -7,7 +11,7 @@ public class _00_ArrayCheatSheet {
 		//2. print the third element in the array
 		System.out.println(a[2]);
 		//3. set the third element to a different value
-		//a[3].replace
+		a[2] = a[2].replace("3", "10");
 		//4. print the third element again
 		System.out.println(a[2]);
 		//5. use a for loop to print all the values in the array
@@ -17,11 +21,18 @@ public class _00_ArrayCheatSheet {
 		}
 		
 		//6. make an array of 50 integers
-		
+		int fifty[] = new int[50];
 		//7. use a for loop to make every value of the integer array a random number
 		
-		//8. without printing the entire array, print only the smallest number in the array
 		
+		for(int A = 0; A < 50; A++) {
+			Random r = new Random();
+			int R = r.nextInt(100);
+			fifty[A] = R;
+			System.out.println(fifty[A]);
+		}
+		//8. without printing the entire array, print only the smallest number in the array
+		System.out.println();
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
