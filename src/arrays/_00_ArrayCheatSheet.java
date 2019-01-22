@@ -32,9 +32,28 @@ public class _00_ArrayCheatSheet {
 			System.out.println(fifty[A]);
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		System.out.println();
+		int L = fifty[0];
+		for(int B = 0; B < fifty.length; B++) {
+			if(fifty[B] < L) {
+				L = fifty[B];
+				
+			}
+			
+		}
+		System.out.println(L);
 		//9 print the entire array to see if step 8 was correct
-		
+		for(int C = 0; C < fifty.length; C++) {
+			System.out.println(fifty[C]);
+		}
 		//10. print the largest number in the array.
+		int L2 = fifty[0];
+		for(int D = 0; D > fifty.length; D++) {
+			if(fifty[D] < L2) {
+				L2 = fifty[D];
+				
+			}
+			
 	}
+		System.out.println(L2);
+}
 }
